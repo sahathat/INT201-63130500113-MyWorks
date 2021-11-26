@@ -26,7 +26,7 @@ export class CookieUtil {
       return cookieValue; //return value ของ cookie
     }
 
-    //สร้าง cookie ที่มี name, value และ expire ขึ้นมา โดย default เวลาของ cookie เท่ากับระยะเวลา session
+    //สร้าง cookie ที่มี name, value และ expire ขึ้นมา
     static set(name, value, expires) {
       //สร้าง cookie
       let cookieText = `${encodeURIComponent(name)}=${encodeURIComponent(value)}`;
